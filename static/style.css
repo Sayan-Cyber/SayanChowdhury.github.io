@@ -61,11 +61,18 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   color: #fff;
+  border-radius: 20px;
 
 }
+.card-title{
+  color: #1e00ff;
+}
+.card-text{
+  color: #120386;
 
+}
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px);
 }
 
 .footer {
@@ -88,6 +95,13 @@ body {
 
 /* Logo Marquee Styles */
 
+input{
+  background: linear-gradient(75deg,#b7fdff,#9ab2ff,#a69bff,#9d8aff);
+}
+textarea{
+  background: linear-gradient(75deg,#a1fcff,#7e9cff,#7f6eff,#7458ff);
+
+}
 
 .logo {
   height: 50px;
