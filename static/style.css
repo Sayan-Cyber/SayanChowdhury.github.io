@@ -24,7 +24,7 @@ body {
 
 .hero {
   position: relative;
-  height: 80vh;
+  height: 90vh;
   color: #fff;
 }
 
@@ -67,11 +67,24 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+iframe{
+  border-radius: 30px;
+  padding: 10px;
+}
+.linkedin-articles .linkedin-embed {
+  margin-bottom: 20px;
+}
+
+.linkedin-articles .linkedin-embed iframe {
+  border: none;
+}
+
 
 /* CSS for cards */
 .card {
   width: 300px; /* Set fixed width for the cards */
   /* margin: 0 1rem 2rem; Add margin around the cards */
+  margin: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the cards */
 }
 
@@ -100,24 +113,26 @@ body {
   }
 
   .card {
-    width: 100%; /* Set full width for cards on mobile */
+    width: 90%; /* Set full width for cards on mobile */
   }
 }
 .card {
   border: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  transition: transform 0.1s ease;
   color: #fff;
-  border-radius: 20px;
-  margin: 5px;
+  /* border-radius: 20px; */
+  margin: 12px;
+  /* border: solid #003cff; */
+  background-color: #1a1a1a;
   /* max-width: 500px; */
 
 }
 .card-title{
-  color: #1e00ff;
+  color: #0957ff;
 }
 .card-text{
-  color: #120386;
+  color: #d5d5d5;
 
 }
 .card:hover {
@@ -385,45 +400,12 @@ textarea{
 
 .logos {
   overflow: hidden;
-  padding: 60px 0;
+  padding: 20px 0;
   background: rgb(0, 0, 0);
   white-space: nowrap;
   position: relative;
 }
 
-.logos:before,
-.logos:after {
-  position: absolute;
-  top: 0;
-  width: 50px;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-
-/* .logos:before {
-  left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0));
-}
-
-.logos:after {
-  right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0));
-} */
-
-.logos:hover .logos-slide {
-  animation-play-state: paused;
-}
-
-.logos-slide {
-  display: inline-block;
-  animation: 35s slide infinite linear;
-}
-
-.logos-slide img {
-  height: 50px;
-  margin: 0 40px;
-}
 .me{
   display: flex;
   justify-content: space-between;
@@ -445,7 +427,7 @@ textarea{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin: 21px;
 }
 .logo-container p :hover {
   filter: grayscale(0%);
@@ -459,4 +441,72 @@ textarea{
 
 #ai{
   background-color: #ffffff;
+}
+
+
+
+
+.certs {
+  display: flex;
+
+  background-color: transparent;
+}
+
+.certi {
+  width: auto;
+  margin: 15px;
+  height: 250px; /* Ensure the images fit within the container */
+  background-color: transparent; /* Ensure the background is transparent */
+}
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.certs {
+  overflow: hidden;
+  padding: 10px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.certs:before,
+.certs:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.certs:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+.certs:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+.certs:hover .certs-slide {
+  animation-play-state: paused;
+  transform: scale(1.25);
+}
+
+.certs-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.certs-slide img {
+  height: 400px;
+  margin: 0 40px;
 }

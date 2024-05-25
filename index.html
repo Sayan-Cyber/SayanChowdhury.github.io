@@ -21,10 +21,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#about">Resume</a>
+              <a class="nav-link" href="#resume">Résumé</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">Blog</a>
+              <a class="nav-link" href="#blog">Blog</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -79,7 +79,7 @@
     </section>
 
 
-    <section id="about" class="about py-5">
+    <section id="about" class="about ">
       <div class="container">
         <h2 class="section-title">I Am:</h2>
         <div class="me">
@@ -205,10 +205,21 @@
         </div>
     </section>
 
-    <section id="certs" class="certs py-5">
+    <section id="certificates" class="certificates">
       <div class="container">
-        <h2 class="section-title">Certificates I have:</h2>
-
+        <h2 class="section-title">Certificates Obtained:</h2>
+        <div class="certs">
+        <div class="certs-slide">
+            <img class="certi" src="static/CERTIFICATE_LANDING_PAGE~5GZFAXH2PFV3.jpeg" alt="Certificate 1">
+            <img class="certi" src="static/CERTIFICATE_LANDING_PAGE~C8YFU9Z57WW2.jpeg" alt="Certificate 2">
+            <img class="certi" src="static/CERTIFICATE_LANDING_PAGE~PR2MH5AD2NJX.jpeg" alt="Certificate 3">
+            <img class="certi" src="static/CERTIFICATE_LANDING_PAGE~RS7Q68L3CST6.jpeg" alt="Certificate 4">
+            <img class="certi" src="static/CERTIFICATE_LANDING_PAGE~WEUE8F4CFVM3.jpeg" alt="Certificate 5">
+            <img class="certi" src="static/1650907504147.png" alt="Certificate 6">
+            <img class="certi" src="static/1650910357311.png" alt="Certificate 7">
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="projects" class="projects py-5">
@@ -238,7 +249,7 @@
             <div class="card">
               <img src="static/dash.jpg" class="card-img-top" alt="Project 1">
               <div class="card-body">
-                <h5 class="card-title">WETSEED - WET Solar Energy and Engineering Dashboard</h5>
+                <h5 class="card-title">WETSEED -Solar Energy & Engineering Dashboard</h5>
                 <p class="card-text">Modern Web Application with Flask</p>
                 <a href="#" class="btn btn-primary">Learn More</a>
               </div>
@@ -247,13 +258,48 @@
             <div class="card">
               <img src="static/p1.jpg" class="card-img-top" alt="Project 1">
               <div class="card-body">
-                <h5 class="card-title">WETDESK Electrical</h5>
+                <h5 class="card-title">WETDESK - Electrical </h5>
                 <p class="card-text">Modern Web Application with Flask</p>
                 <a href="#" class="btn btn-primary">Learn More</a>
               </div>
             </div>
           </div>
 
+        </div>
+      </div>
+    </section>
+
+
+    <section id="linkedin-articles" class="linkedin-articles ">
+      <div class="container">
+        <h2 class="section-title">Featured LinkedIn Articles</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- Embed LinkedIn Article -->
+            <div class="linkedin-embed">
+              <!-- Example of LinkedIn embed code -->
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7193639122538803200" height="300" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Another LinkedIn Article -->
+            <div class="linkedin-embed">
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7192925519376474112" height="300" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <!-- Another LinkedIn Article -->
+            <div class="linkedin-embed">
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7092371360525533184" height="300" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- Another LinkedIn Article -->
+            <div class="linkedin-embed">
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7091866995016564736" height="300" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -280,17 +326,18 @@
     </section>
   </main>
 
+
   <footer class="footer bg-dark text-white py-3">
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
           <h5>Quick Links</h5>
           <ul class="list-unstyled">
-            <li>Companies Worked In: <a href="https://www.lntecc.com/" class="">Larsen & Toubro Limited</a></li>
+            <li>Current Company: <a href="https://www.lntecc.com/" class="">Larsen & Toubro Limited</a></li>
             <li>Certificates: <a href="#certificates" class="">Explore My certificates</a></li>
             <!-- <li>Schooling: <a href="#schooling" class="">School A, School B</a></li> -->
             <li>Contact No: <a href="tel:+916290499207" class="">+916290499207</a></li>
-            <li>Contact Email: <a href="iamsayanchowdhury2000@gmail.com" class="">iamsayanchowdhury2000@gmail.com</a>
+            <li>Contact Email: <a href="mailto:iamsayanchowdhury2000@gmail.com" class="">iamsayanchowdhury2000@gmail.com</a>
             </li>
           </ul>
         </div>
@@ -324,14 +371,17 @@
   <script href="static/script.js"></script>
   <script>
 
-    
+var copy = document.querySelector(".certs-slide").cloneNode(true);
+document.querySelector(".certs").appendChild(copy);
   const questions = [
-  "What projects has Sayan done in ML?",
+  "What ML projects Sayan has done?",
   "Where does Sayan see himself in the next 5 years?",
   "What is Sayan passionate about?",
   "Can you walk me through Sayan's experience?",
   "What is Sayan's strengths and weaknesses?",
-  "How do Sayan handles high-pressure situations?"
+  "How do Sayan handles high-pressure situations?",
+  "Tell me a fun fact about Sayan.",
+  "Is Sayan a Data Engineer?"
 ];
 
 const questionElement = document.querySelector('.suggestions .question');
@@ -345,7 +395,7 @@ function displayNextQuestion() {
 
 displayNextQuestion(); // Display the first question initially
 
-setInterval(displayNextQuestion, 5000); // Switch questions every 9 seconds
+setInterval(displayNextQuestion, 4990); // Switch questions every 9 seconds
 
   </script>
 </body>
