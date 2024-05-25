@@ -185,6 +185,109 @@ textarea{
   background: rgba(255, 255, 255, 0.1);
   color: #003cff;
 }
+.description-box {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  margin-right: 20px;
+  color: aliceblue;
+}
+
+.description-box p {
+  margin: 0;
+  text-align: justify;
+  color: aliceblue;
+}
+
+.me {
+  display: flex;
+  align-items: center;
+}
+.love {
+  display: inline-block; /* Ensures transform works properly */
+  animation: beat 1s infinite;
+  transition: .1s ease-in;
+}
+
+@keyframes beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+
+.love:hover {
+  transform: rotate(20deg); /* Rotate by 20 degrees on hover */
+}
+.me img {
+  margin-left: 20px;
+  border-radius: 50%;
+  /* border: #0a0436; */
+  background: linear-gradient(75deg,#0a0818,#000000);
+  padding: 10px;
+}
+.suggestions {
+  display: flex;
+  justify-content: center;
+  /* Add some margin for better spacing */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.question {
+  margin-left: 1px;
+  color: #6200ff;
+  /* Use gradient as text color */
+  background-image: linear-gradient(45deg, #78d8f3, #9c71ff, #ff65e5);
+  /* Set the background size and repeat properties */
+  background-size: 100%;
+  
+  background-repeat: repeat;
+  /* Use the text as a mask for the background */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.suggestions-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: center;
+}
+
+.suggestions {
+  margin-left: 5px; /* Add some margin for spacing */
+}
+
+
+.suggestions .question {
+  animation: fadeInOut 5s linear infinite;
+  opacity: 0;
+}
+.about {
+  color: aliceblue;
+}
+
+.section-title {
+  color: #0400ff;
+}
 
 .hero .form-control::placeholder {
   color: rgba(51, 0, 255, 0.7);
