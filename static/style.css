@@ -36,6 +36,7 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  filter: opacity(.5);
 }
 
 .hero h1 {
@@ -51,7 +52,7 @@ body {
   font-family: 'Ahsing-Regular', Arial, sans-serif;
   font-size: 32px; /* 2rem equivalent */
   font-weight: bold;
-  margin-bottom: 32px; /* 2rem equivalent */
+  margin-bottom: 10px; /* 2rem equivalent */
   color: #0400ff;
 
 }
@@ -76,8 +77,54 @@ body {
 }
 
 .footer {
-  background-color: #333;
+  background: linear-gradient(75deg, #10011f, #0c0615, #0a0436);
+  color: #fff;
+  /* color: #3b45ff; */
+
 }
+
+.footer h5 {
+  font-family: 'Ahsing-Regular', Arial, sans-serif;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.footer ul {
+  padding: 0;
+  list-style: none;
+  font-size: 12px;
+  font-weight: 100;
+  color: #ffffff;
+  /* color: #3b45ff; */
+
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #6200ff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .text-white img {
+  vertical-align: middle;
+  margin-right: 5px;
+  color: #6200ff;
+
+}
+
+.footer p {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
 .navbar-brand
 {
   font-family: 'Ahsing-Regular', Arial, sans-serif;
@@ -95,7 +142,7 @@ body {
 
 /* Logo Marquee Styles */
 
-input{
+.container input{
   background: linear-gradient(75deg,#b7fdff,#9ab2ff,#a69bff,#9d8aff);
 }
 textarea{
@@ -118,14 +165,53 @@ textarea{
   transform: scale(1.25);
 }
 
+.hero .input-group {
+  max-width: 500px;
+  margin: 20px auto;
+}
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+.hero .input-group-text {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.hero .form-control {
+  border-radius: 20px 0 0 20px;
+  padding: 10px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.1);
+  color: #003cff;
+}
+
+.hero .form-control::placeholder {
+  color: rgba(51, 0, 255, 0.7);
+}
+
+.hero .btn-primary {
+  border-radius: 0 20px 20px 0;
+  background-color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .btn-primary:hover {
+  background-color: #9290b0;
+  
+}
+
+.hero .btn-primary img {
+  height: 100px;
+}
+
+.hero .input-group-text img {
+  height: 20px;
 }
 
 .logos {
@@ -140,13 +226,13 @@ textarea{
 .logos:after {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 50px;
   height: 100%;
   content: "";
   z-index: 2;
 }
 
-.logos:before {
+/* .logos:before {
   left: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0));
 }
@@ -154,7 +240,7 @@ textarea{
 .logos:after {
   right: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0));
-}
+} */
 
 .logos:hover .logos-slide {
   animation-play-state: paused;
@@ -168,4 +254,40 @@ textarea{
 .logos-slide img {
   height: 50px;
   margin: 0 40px;
+}
+.me{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.names{
+  display: block;
+}
+
+
+.logos-slide {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+.logo-container p :hover {
+  filter: grayscale(0%);
+  cursor: pointer;
+  transform: scale(1.25);
+}
+.logo {
+  margin-bottom: 5px;
+}
+
+
+#ai{
+  background-color: #ffffff;
 }
