@@ -56,14 +56,60 @@ body {
   color: #0400ff;
 
 }
+.projects {
+  padding-top: 5rem; /* Adjust top padding as needed */
+  padding-bottom: 5rem; /* Adjust bottom padding as needed */
+}
 
+/* CSS for card container */
+.m {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* CSS for cards */
+.card {
+  width: 300px; /* Set fixed width for the cards */
+  /* margin: 0 1rem 2rem; Add margin around the cards */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the cards */
+}
+
+/* CSS for card images */
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+/* CSS for card titles */
+.card-title {
+  font-size: 1.25rem; /* Adjust font size of card titles */
+  margin-top: 1rem; /* Add some space between title and text */
+}
+
+/* CSS for card text */
+.card-text {
+  font-size: 1rem; /* Adjust font size of card text */
+}
+
+@media (max-width: 768px) {
+  /* CSS for mobile devices */
+  .m {
+    flex-direction: column; /* Stack cards vertically on mobile */
+    align-items: center; /* Center cards on mobile */
+  }
+
+  .card {
+    width: 100%; /* Set full width for cards on mobile */
+  }
+}
 .card {
   border: none;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
   color: #fff;
   border-radius: 20px;
-  margin: 15px;
+  margin: 5px;
   /* max-width: 500px; */
 
 }
