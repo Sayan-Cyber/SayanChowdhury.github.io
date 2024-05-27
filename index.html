@@ -10,10 +10,17 @@
 </head>
 
 <body>
+
+  
+
   <header>
+    <video autoplay muted loop class="hero-video">
+      <source src="static/bg.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">Sayan <span class="there">Chowdhury</span></a>
+        <a class="navbar-brand" href="#">Sayan <span class="there2">Chowdhury</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" style="width: 20px"></span>
@@ -24,7 +31,7 @@
               <a class="nav-link" href="#resume">Résumé</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#blog">Blog</a>
+              <a class="nav-link" href="#linkedin-articles">Articles</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -43,17 +50,14 @@
 
   <main>
     <section id="hero" class="hero d-flex align-items-center">
-      <video autoplay muted loop class="hero-video">
-        <source src="static/bg.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+
       <div class="container">
         <div class="row justify-content-center align-items-center h-100">
           <div class="col-lg-6 text-center">
             <div class="intr">
-              <h1>Hello <span class="there">There!</span></h1>
+              <h1><span class="there">Hello!</span></h1>
             </div>
-            <p>Explore my latest projects and learn more about my skills and experience.</p>
+            <p class="subt">Explore my latest projects and learn more about my skills and experience.</p>
             <div class="input-group">
               <span class="input-group-text bg-transparent border-0">
                 <img src="static/ai.png" alt="AI Icon" style="height: 40px;">
@@ -71,9 +75,9 @@
               <div class="suggestions">
                 <p class="question">What programming languages Sayan knows?</p>
               </div>
-            </div>       <!-- <div class="col-lg-6">
-            <img src="hero-image.jpg" alt="Hero Image" class="img-fluid">
-          </div> -->
+            </div> <!-- <div class="col-lg-6">
+              <img src="hero-image.jpg" alt="Hero Image" class="img-fluid">
+            </div> -->
           </div>
         </div>
     </section>
@@ -84,10 +88,12 @@
         <h2 class="section-title">I Am:</h2>
         <div class="me">
           <div class="description-box">
-            <p>A passionate Machine learning engineer with expertise in developing
-              cutting-edge AI solutions. With a strong background in data science and machine learning algorithms, I
-              strive
-              to create innovative and impactful projects that solve real-world problems.</p>
+            <div class="iam-section">
+              <p class="iam-text">A passionate Machine learning engineer with expertise in developing
+                cutting-edge AI solutions. With a strong background in data science and machine learning algorithms, I
+                strive
+                to create innovative and impactful projects that solve real-world problems.</p>
+            </div>
           </div>
           <!-- <img src="static/pp.png" alt="Profile Picture" style="height: 150px;"> -->
         </div>
@@ -165,21 +171,21 @@
               <p>CSS3</p>
             </div>
             <!-- <div class="logo-container">
-              <img class="logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" height="30"
-                alt="angularjs logo" />
-              <p>AngularJS</p>
-            </div> -->
+                <img class="logo"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" height="30"
+                  alt="angularjs logo" />
+                <p>AngularJS</p>
+              </div> -->
             <div class="logo-container">
               <img class="logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                 height="30" alt="react logo" />
               <p>React</p>
             </div>
             <!-- <div class="logo-container">
-              <img class="logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="30"
-                alt="c logo" />
-              <p>C</p>
-            </div> -->
+                <img class="logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="30"
+                  alt="c logo" />
+                <p>C</p>
+              </div> -->
             <div class="logo-container">
               <img class="logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
                 height="30" alt="git logo" />
@@ -201,13 +207,11 @@
               <p>Node.js</p>
             </div>
             <div class="logo-container">
-              <img class="logo" src="static/pbi.png"
-                height="" alt="Power BI logo" />
+              <img class="logo" src="static/pbi.png" height="" alt="Power BI logo" />
               <p>Power BI</p>
             </div>
             <div class="logo-container">
-              <img class="logo" src="static/tab.png"
-                height="" alt="Power BI logo" />
+              <img class="logo" src="static/tab.png" height="" alt="Power BI logo" />
               <p>Tableau</p>
             </div>
 
@@ -219,7 +223,8 @@
       <div class="container">
         <h2 class="section-title">Certificates Obtained:</h2>
         <div class="certs">
-        <div class="certs-slide">
+          <div class="certs-slide">
+            <!-- <div id="magnify-circle"></div> -->
             <img class="certi" src="static/CERTIFICATE_LANDING_PAGE~5GZFAXH2PFV3.jpeg" alt="Certificate 1">
             <img class="certi" src="static/CERTIFICATE_LANDING_PAGE~C8YFU9Z57WW2.jpeg" alt="Certificate 2">
             <img class="certi" src="static/CERTIFICATE_LANDING_PAGE~PR2MH5AD2NJX.jpeg" alt="Certificate 3">
@@ -288,26 +293,30 @@
             <!-- Embed LinkedIn Article -->
             <div class="linkedin-embed">
               <!-- Example of LinkedIn embed code -->
-              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7193639122538803200" height="350" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7193639122538803200" height="350"
+                width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
             </div>
           </div>
           <div class="col-md-6">
             <!-- Another LinkedIn Article -->
             <div class="linkedin-embed">
-              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7192925519376474112" height="350" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7192925519376474112" height="350"
+                width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
             </div>
           </div>
 
           <div class="col-md-6">
             <!-- Another LinkedIn Article -->
             <div class="linkedin-embed">
-              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7092371360525533184" height="350" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7092371360525533184" height="350"
+                width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
             </div>
           </div>
           <div class="col-md-6">
             <!-- Another LinkedIn Article -->
             <div class="linkedin-embed">
-              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7091866995016564736" height="350" width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+              <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:7091866995016564736" height="350"
+                width="100%" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
             </div>
           </div>
         </div>
@@ -343,11 +352,14 @@
         <div class="col-lg-6">
           <h5>Quick Links</h5>
           <ul class="list-unstyled">
-            <li>Current Company: <a href="https://www.lntecc.com/" class=""><img src="static/L&T.png" alt="" height="20px" style="margin-left: 5px;margin-right: 5px;filter: contrast(0) brightness(100);">Larsen & Toubro Limited</a></li> 
+            <li>Current Company: <a href="https://www.lntecc.com/" class=""><img src="static/L&T.png" alt=""
+                  height="20px" style="margin-left: 5px;margin-right: 5px;filter: contrast(0) brightness(100);">Larsen &
+                Toubro Limited</a></li>
             <li>Certificates: <a href="#certificates" class="">Explore My certificates</a></li>
             <!-- <li>Schooling: <a href="#schooling" class="">School A, School B</a></li> -->
             <li>Contact No: <a href="tel:+916290499207" class="">+916290499207</a></li>
-            <li>Contact Email: <a href="mailto:iamsayanchowdhury2000@gmail.com" class="">iamsayanchowdhury2000@gmail.com</a>
+            <li>Contact Email: <a href="mailto:iamsayanchowdhury2000@gmail.com"
+                class="">iamsayanchowdhury2000@gmail.com</a>
             </li>
           </ul>
         </div>
@@ -365,7 +377,8 @@
                   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" height="20"
                   alt="Twitter" style="filter: invert();"></a>
             </li>
-            <li>Address: <a href="https://maps.app.goo.gl/My9nDqgzLETgkXfAA" class="">Manapakkam, Chennai, Tamilnadu, India</a></li>
+            <li>Address: <a href="https://maps.app.goo.gl/My9nDqgzLETgkXfAA" class="">Manapakkam, Chennai, Tamilnadu,
+                India</a></li>
             <li>Current City: <a href="https://maps.app.goo.gl/qB98M91wzCPquR51A" class="">Chennai</a></li>
           </ul>
           <p class="mt-3 mb-0">Made With <span class="love">❤️</span> By Sayan Chowdhury</p>
@@ -375,38 +388,285 @@
   </footer>
 
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/TextPlugin.min.js"></script>
+
 
   <script href="static/script.js"></script>
   <script>
+document.body.style.overflow = 'hidden';
 
-var copy = document.querySelector(".certs-slide").cloneNode(true);
-document.querySelector(".certs").appendChild(copy);
-  const questions = [
-  "What ML projects Sayan has done?",
-  "Where does Sayan see himself in the next 5 years?",
-  "What is Sayan passionate about?",
-  "Can you walk me through Sayan's experience?",
-  "What are Sayan's strengths and weaknesses?",
-  "How do Sayan handles high-pressure situations?",
-  "Tell me a fun fact about Sayan.",
-  "Is Sayan a Data Engineer?",
-  "What award Sayan won?"
-];
+// Create a GSAP timeline
+let initialTimeline = gsap.timeline();
 
-const questionElement = document.querySelector('.suggestions .question');
+// Add animations to the timeline
+initialTimeline.from(".hero", { opacity: 0, duration: 2 })
+  .from(".hero-video", { opacity: 0, duration: 1.5 })
+  .from(".subt", { opacity: 0, duration: 0.5 })
+  .from(".input-group", { opacity: 0, duration: 0.5 })
+  .from(".suggestions-container", { opacity: 0, duration: 0.5 })
+  .from(".navbar", { y: "-100%", duration: 1 }, "-=1")
+  .from(".navbar-collapse", { opacity: 0, duration: 1 }, "-=0.5")
+  .from(".nav-item", { opacity: 0, y: -20, stagger: 0.2, duration: 0.5 }, "-=0.5");
 
-let currentIndex = 0;
+// Enable scrolling after the timeline finishes
+initialTimeline.eventCallback("onComplete", function() {
+  document.body.style.overflow = 'auto';
+});
+    var copy = document.querySelector(".certs-slide").cloneNode(true);
+    document.querySelector(".certs").appendChild(copy);
+    const questions = [
+      "What ML projects Sayan has done?",
+      "Where does Sayan see himself in the next 5 years?",
+      "What is Sayan passionate about?",
+      "Can you walk me through Sayan's experience?",
+      "What are Sayan's strengths and weaknesses?",
+      "How do Sayan handles high-pressure situations?",
+      "Tell me a fun fact about Sayan.",
+      "Is Sayan a Data Engineer?",
+      "What award Sayan won?"
+    ];
 
-function displayNextQuestion() {
-  questionElement.textContent = questions[currentIndex];
-  currentIndex = (currentIndex + 1) % questions.length;
-}
+    const questionElement = document.querySelector('.suggestions .question');
 
-displayNextQuestion(); // Display the first question initially
+    let currentIndex = 0;
 
-setInterval(displayNextQuestion, 4990); // Switch questions every 9 seconds
+    function displayNextQuestion() {
+      questionElement.textContent = questions[currentIndex];
+      currentIndex = (currentIndex + 1) % questions.length;
+    }
+
+    displayNextQuestion(); // Display the first question initially
+
+    setInterval(displayNextQuestion, 4990); // Switch questions every 9 seconds
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, TextPlugin);
+
+
+
+    // Create a timeline
+    let tl = gsap.timeline({ repeat: -1, yoyo: true });
+
+    // Add animations to the timeline
+    tl.to(".there", {
+      duration: 2,
+      text: "Namaste!",
+      ease: "power2.inOut"
+    })
+      .to(".there", {
+        duration: 2,
+        text: "Nomoshkar!",
+        ease: "power2.inOut"
+      }, "+=2") // Adds a 2-second delay before starting this animation
+      .to(".there", {
+        duration: 2,
+        text: "Vanakkam!",
+        ease: "power2.inOut"
+      }, "+=2")
+      .to(".there", {
+        duration: 2,
+        text: "Namaskaram!",
+        ease: "power2.inOut"
+      }, "+=2")
+
+      .to(".there", {
+        duration: 2,
+        text: "Hola!",
+        ease: "power2.inOut"
+      }, "+=2")
+
+      .to(".there", {
+        duration: 2,
+        text: "Bonjour!",
+        ease: "power2.inOut"
+      }, "+=2");
+
+    // GSAP animation for logos
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(".logo-container",
+      {
+        opacity: 0,
+        scale: 0
+      },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 0.5,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".logos",
+          start: "top 75%",
+          end: "bottom 25%",
+          toggleActions: "play none none reverse"
+        }
+      }
+    );
+    // GSAP animation for project cards
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo(".card",
+      {
+        opacity: 0,
+        rotationY: -90,
+        x: -200
+      },
+      {
+        opacity: 1,
+        rotationY: 0,
+        x: 0,
+        duration: 1,
+        stagger: 0.3,
+        ease: "back.out(1.7)",
+        scrollTrigger: {
+          trigger: ".projects",
+          start: "top 75%",
+          end: "bottom 25%",
+          toggleActions: "play none none reverse"
+        }
+      }
+    );
+    // GSAP animation for certificates
+    gsap.fromTo(".certi",
+      {
+        opacity: 0,
+        scale: 0.5
+      },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".certificates",
+          start: "top 75%",
+          end: "bottom 25%",
+          toggleActions: "play none none reverse"
+        }
+      }
+    );
+
+    // GSAP animation for contact form
+gsap.fromTo(".contact form",
+  {
+    opacity: 0,
+    y: 50
+  },
+  {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    stagger: 0.2,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".contact",
+      start: "top 75%",
+      end: "bottom 25%",
+      toggleActions: "play none none reverse"
+    }
+  }
+);
+
+
+    // GSAP animation for LinkedIn articles
+    gsap.fromTo(".linkedin-embed",
+      {
+        opacity: 0,
+        y: 100
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.3,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".linkedin-articles",
+          start: "top 75%",
+          end: "bottom 25%",
+          toggleActions: "play none none reverse"
+        }
+      }
+    );
+
+ 
+
+    gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+    ScrollTrigger.normalizeScroll(true)
+
+    // create the smooth scroller FIRST!
+    let smoother = ScrollSmoother.create({
+      smooth: 2,
+      effects: true,
+      normalizeScroll: true
+    });
+
+    // pin box-c when it reaches the center of the viewport, for 300px
+    ScrollTrigger.create({
+      trigger: ".about",
+      pin: true,
+      start: "center center",
+      end: "+=300",
+      markers: true
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+  const magnifyCircle = document.getElementById("magnify-circle");
+  const certiImages = document.querySelectorAll(".certi");
+
+  // Function to handle mousemove event over certificate images
+  function handleMouseMove(e) {
+    // Set the position of the magnifying circle to the current mouse position
+    gsap.set(magnifyCircle, { x: e.clientX, y: e.clientY });
+
+    // Show the magnifying circle
+    gsap.set(magnifyCircle, { display: "block" });
+
+    // Get the coordinates of the mouse relative to the magnifying circle
+    const mouseX = e.clientX - magnifyCircle.getBoundingClientRect().left;
+    const mouseY = e.clientY - magnifyCircle.getBoundingClientRect().top;
+
+    // Set the scale of the magnifying circle to magnify the area under the mouse cursor
+    gsap.set(magnifyCircle, { scale: 2, transformOrigin: `${mouseX}px ${mouseY}px` });
+  }
+
+  // Function to handle mouseleave event from certificate images
+  function handleMouseLeave() {
+    gsap.set(magnifyCircle, { display: "none" }); // Hide the magnifying circle
+  }
+
+  // Add event listeners to each certificate image
+  certiImages.forEach(function (certiImage) {
+    certiImage.addEventListener("mousemove", handleMouseMove);
+    certiImage.addEventListener("mouseleave", handleMouseLeave);
+  });
+});
+
+gsap.fromTo("#hero", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, scrollTrigger: "#hero" });
+        gsap.fromTo("#about", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, scrollTrigger: "#about" });
+        gsap.fromTo("#certificates", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, scrollTrigger: "#certificates" });
+        gsap.fromTo("#projects", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, scrollTrigger: "#projects" });
+        gsap.fromTo("#linkedin-articles", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, scrollTrigger: "#linkedin-articles" });
+        gsap.fromTo("#contact", { opacity: 0, y: 50 }, { opacity: 1, y: 0, duration: 1, scrollTrigger: "#contact" });
+
+        // Smooth scrolling effect for anchor links
+        gsap.registerPlugin(ScrollToPlugin);
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                gsap.to(window, {
+                    scrollTo: { y: anchor.getAttribute('href'), offsetY: 70 },
+                    duration: 1
+                });
+            });
+        });
+
 
   </script>
 </body>
